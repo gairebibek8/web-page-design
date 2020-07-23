@@ -1,0 +1,227 @@
+body{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-color: brown;
+}
+
+ header nav {
+background-color:#95B722 ;
+/*opacity: 0.5;*/
+padding: 10px;
+margin: 0 10px;
+font-size: 25px;
+/*position: absolute;*/
+}
+
+header {
+	margin-bottom: -10px;
+
+}
+
+
+header nav a {
+	padding-right: 40px;
+	text-decoration: none;
+}
+
+.logo{
+	display: inline-flex;
+	margin-left: 450px;
+}
+.main{
+	margin-top: 0;
+	margin: 10px;
+	background-image: url(unity.jpg);
+	height: 600px;
+	color:white;
+}
+.main h1 {
+	font-family: "Lucida Console", Courier, monospace;
+	color: #350D03;
+	font-size: 50px;
+}
+ .main p{
+	text-align: center;
+	top: 28%;
+	position: relative;
+	color: pink ;
+	font: 1.4em "Fira Sans", sans-serif;
+}
+
+.main button{
+	position: absolute;    /*counts from the whole page*/ 
+	top: 75%;
+	left:45%;
+	background-color: green;
+	color: white;
+	padding:10px;
+	font-size: 15px; 
+     
+}
+.main button:hover {
+	color: black;
+	background-color: white;
+	cursor: pointer;
+}
+
+div h1{
+	text-align: center;
+	top:25%;
+	position: relative; /* counts from the particular section or division*/
+}
+
+.headerlink{
+	border-radius: 50px;
+}
+#home:hover{
+	background-color: white;
+	color: black;
+}
+
+.peoplesay {
+	text-align: center;
+	background-color: lightblue;
+	padding:10px;
+	margin: 0 20px;
+
+}
+
+.peoplesay h3{
+     color: #666AFF;
+     font-size: 30px;
+     font-style: italic;
+}
+
+.peoplesay p{
+     color: green;
+     /*font-size: 18px;*/
+     font: italic small-caps bold 16px/2 cursive;
+}
+
+#boy{
+	border-radius: 100px;
+	width:60px;
+	height:60px;
+	padding-right:-20%;
+}
+
+#girl{
+	border-radius: 100px;
+	width:60px;
+	height:60px;
+	padding-right: -20%;
+}
+.people { 
+     display: flex;
+     padding: 10px;
+}
+.person{
+	padding: 30px;
+	color: #EF5145;
+	font-size:18px;
+	font: italic 1.3em "Fira Sans", serif;
+}
+span{
+	color: black;
+}
+
+.jobs_followers {
+	display: flex;
+	padding: 10px;
+	background-color: white;
+
+}
+
+.first img {
+	float: left;
+	width :180px;
+	height: 150px;
+	padding-right: 20px;
+}
+
+.first{
+	height: 600px;
+	width:60%;
+	display: block;
+	border:1px dotted black; 
+	margin-right: 10px;
+	padding: 20px;
+	background-color: #DAF7A6
+}
+.first h1{
+font-family: Helvetica;
+font-size: 29px;
+color: coral;
+}
+.first h2{
+	font-family: Georgia, serif;
+color:green;
+}
+.first p{
+color:#7D3F89;
+font-family: system-ui;
+}
+
+.second{
+	height: 600px;
+	width:40%;
+	border:1px dotted black;
+	padding: 20px;
+	background-color: #ECE6AE
+}
+
+.second h5{
+	/*font-size: 24px*/
+	font: small-caps bold 24px/1 sans-serif;
+	color: #9E3E2A;
+}
+
+.second p{
+	
+	font-family: cursive;
+	color: #8A9E2A;
+	font-size: 18px;
+}
+
+#laptop {
+	margin-bottom: 100px;
+}
+
+#laptop h1{
+font-family: 
+font-size:40px;
+}
+
+#laptop p{
+	font-size:18px;
+}
+
+.second pre{
+	font-size: 40px;
+	color: #61D8EF;
+}
+
+footer{
+
+}
+
+footer nav {
+background-color:black;
+/*opacity: 0.5;*/
+padding: 10px;
+margin: 0 10px;
+color:white;
+font-size: 15px;
+/*position: absolute;*/
+}
+
+
+footer nav a {
+	padding-right: 40px;
+	text-decoration: none;
+	color: white;
+	position: relative;
+	left: 65%;
+}
