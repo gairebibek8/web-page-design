@@ -3,15 +3,16 @@ body{
 	padding:0;
 	box-sizing: border-box;
     background-repeat: no-repeat;
-    background-color: brown;
+    background-color:whitesmoke;
 }
 
  header nav {
-background-color:#95B722 ;
+background-color: blanchedalmond ;
 /*opacity: 0.5;*/
 padding: 10px;
 margin: 0 10px;
-font-size: 25px;
+font-size: 15px;
+font-weight: bolder;
 /*position: absolute;*/
 }
 
@@ -22,18 +23,19 @@ header {
 
 
 header nav a {
-	padding-right: 40px;
+	padding-right: 50px;
+	color: rgb(90, 78, 78);
 	text-decoration: none;
 }
 
 .logo{
-	display: inline-flex;
-	margin-left: 450px;
+	display:inline-flex;
+	margin-left: 600px;
 }
 .main{
 	margin-top: 0;
 	margin: 10px;
-	background-image: url(unity.jpg);
+	background-image: url(images/unity.jpg);
 	height: 600px;
 	color:white;
 }
@@ -44,16 +46,19 @@ header nav a {
 }
  .main p{
 	text-align: center;
+	width: 50%;
 	top: 28%;
+	left: 25%;
 	position: relative;
-	color: pink ;
+	color: whitesmoke ;
 	font: 1.4em "Fira Sans", sans-serif;
 }
 
 .main button{
 	position: absolute;    /*counts from the whole page*/ 
-	top: 75%;
+	top: 70%;
 	left:45%;
+	border:3px solid darkturquoise;
 	background-color: green;
 	color: white;
 	padding:10px;
@@ -73,18 +78,22 @@ div h1{
 }
 
 .headerlink{
-	border-radius: 50px;
+	border-radius: 100px;
+	height: 17px;
+	width: auto;
 }
+
 #home:hover{
 	background-color: white;
-	color: black;
+	color: rgb(206, 33, 33);
 }
 
 .peoplesay {
 	text-align: center;
-	background-color: lightblue;
-	padding:10px;
+	background-color: white;
+	padding:10px 300px;
 	margin: 0 20px;
+	width: 50%;
 
 }
 
@@ -104,18 +113,37 @@ div h1{
 	border-radius: 100px;
 	width:60px;
 	height:60px;
-	padding-right:-20%;
+	/* padding-right:-20%; */
+	border: 2px solid whitesmoke;
+	margin: 3% 0;
 }
+
 
 #girl{
 	border-radius: 100px;
 	width:60px;
 	height:60px;
-	padding-right: -20%;
+	border: 2px solid white;
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	/* padding-right: -20%; */
+	margin: 3% 0;
 }
 .people { 
-     display: flex;
-     padding: 10px;
+	 display: flex;
+	 justify-content: center;
+	 padding: 10px;
+	 background-color: skyblue;
+}
+
+
+
+.boy {
+	width:25%;
+}
+.girl{
+	width: 25%;
 }
 .person{
 	padding: 30px;
@@ -130,43 +158,48 @@ span{
 .jobs_followers {
 	display: flex;
 	padding: 10px;
-	background-color: white;
+	margin-bottom: 5%;
+	background-color: whitesmoke;
+	justify-content: center;
 
 }
 
 .first img {
 	float: left;
-	width :180px;
+	width :150px;
 	height: 150px;
 	padding-right: 20px;
 }
 
 .first{
-	height: 600px;
-	width:60%;
+	height: auto;
+	width:30%;
 	display: block;
 	border:1px dotted black; 
 	margin-right: 10px;
 	padding: 20px;
-	background-color: #DAF7A6
+	background-color: #DAF7A6;
 }
+
 .first h1{
 font-family: Helvetica;
 font-size: 29px;
 color: coral;
 }
+
 .first h2{
 	font-family: Georgia, serif;
 color:green;
 }
+
 .first p{
 color:#7D3F89;
 font-family: system-ui;
 }
 
 .second{
-	height: 600px;
-	width:40%;
+	height: auto;
+	width:30%;
 	border:1px dotted black;
 	padding: 20px;
 	background-color: #ECE6AE
@@ -184,13 +217,20 @@ font-family: system-ui;
 	color: #8A9E2A;
 	font-size: 18px;
 }
+.second img{
+position: absolute;
+	width: 30px;
+	height: 30px;
+	top: 207%;
+	border-radius: 50px;
+	border: 2px solid red;
+}
 
 #laptop {
 	margin-bottom: 100px;
 }
 
-#laptop h1{
-font-family: 
+#laptop h1{ 
 font-size:40px;
 }
 
@@ -203,11 +243,8 @@ font-size:40px;
 	color: #61D8EF;
 }
 
-footer{
 
-}
-
-footer nav {
+footer  {
 background-color:black;
 /*opacity: 0.5;*/
 padding: 10px;
@@ -215,13 +252,20 @@ margin: 0 10px;
 color:white;
 font-size: 15px;
 /*position: absolute;*/
+display: inline-flex;
+width: 100%;
 }
 
+footer p{
+	position: relative;
+	left: 30%;
+}
 
 footer nav a {
 	padding-right: 40px;
 	text-decoration: none;
 	color: white;
 	position: relative;
-	left: 65%;
+	left: 150%;
+	
 }
