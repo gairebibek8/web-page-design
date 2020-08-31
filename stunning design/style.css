@@ -181,6 +181,11 @@ span{
 	background-color: #DAF7A6;
 }
 
+.first img{
+	border-radius: 40px;
+	
+}
+
 .first h1{
 font-family: Helvetica;
 font-size: 29px;
@@ -223,7 +228,7 @@ position: absolute;
 	height: 30px;
 	top: 207%;
 	border-radius: 50px;
-	border: 2px solid red;
+	border: 2px solid rgb(112, 20, 187);
 }
 
 #laptop {
