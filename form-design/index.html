@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title> Form Design! </title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+
+        <meta charset='UTF-8' />
+        <meta content="HTML,CSS,Javascript">
+    </head>
+
+
+    <body>
+
+<section id='overlay'>
+    <img src="laptops.jpg" alt="laptop" >
+    <pre>Don't🤔 think, 
+       Submit it😎</pre>
+    <hr>
+        <h1>Place an order!</h1>
+
+        <h4>* items must be filled to submit the form!</h4>
+
+      <form action="submission.html" method="POST">  
+        <label> First Name*:</label>
+        <input type='text' name='fname' maxlength=20 placeholder="First Name" required>
+                <!-- 'value=name ' here name will be shown in the input box which has to be
+                deleted in order to enter the value. however, placeholder does the work. -->
+
+        <hr>
+
+        <label for='lastname'>Last Name*:</label> &nbsp;&nbsp;
+        <input type="text" id="lastname" name="lname" placeholder="Last Name" required>
+
+<hr>
+
+        <label for='dob'>Date of Birth*: </label>
+        <input type="date" name="dob" id="dob" required>
+
+<hr>
+        <label for="num">How many laptops do you want to buy?</label>
+        <input type="number" id="num" name="number of laptops scale" value=0 >
+
+        <hr>
+
+        <label for='monitors'>How many monitors do you wanna have?</label> <br>
+        <span>1</span>
+        <input type='range' id='monitors' name=monitor min=1 max="10">
+        <span>10</span>
+
+        <hr> 
+
+        <span>If you need extra accessories then check the box:</span>
+        <input type='checkbox' name="keyboard" value="keyboard"> Keyboard
+        &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  <input type='checkbox' name="harddrive" value="harddrive"> External Harddrive
+        &nbsp;&nbsp;&nbsp;  &nbsp;&nbsp;&nbsp; <input type='checkbox' name="mouse" value="mouse"> Mouse
+
+        <hr>
+
+        <label>Do you want home delivery?*</label>
+        <br>
+        <input type="radio" name='delivery' value=yes required> Yes
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="radio" name='delivery' value='no' required> No 
+
+<hr>
+        <label for='color'>Choose your favourite color!</label>
+        
+        <select id='color' name=color>
+            <option>Choose here!</option>
+            <option value='grey'>Grey</option>
+            <option value='silver'>Silver</option>
+            <option value='black'>Black</option>
+            <option value='golden'>Golden</option>
+        </select>
+
+        <hr>
+
+        <label for="gadget">What type of gadgets would you like to see in our shop?</label>
+        <input list="gadgets" id="gadget" name="gadget">
+        <datalist id="gadgets">
+          <option value="Mobile-phone"></option>
+          <option value="PCs"></option>
+          <option value="Tablets"></option>
+        </datalist>
+
+        <hr>
+
+        <label for="extra">Anything else you want to add?</label>
+        <br>
+        <textarea id="extra" name="extra" rows="5" cols="40"></textarea>
+
+        <hr>
+        <input type="reset" value="Reset">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type='Submit' value=submit >
+
+      </form>  
+     </section> 
+     
+    </body>
+</html>
