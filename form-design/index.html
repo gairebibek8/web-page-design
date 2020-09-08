@@ -21,16 +21,46 @@
 
         <h4>* items must be filled to submit the form!</h4>
 
-      <form action="submission.html" method="POST">  
+      <form action="submission.html" method="POST" >
+         <!-- if novalidate is used inside form, the required won't work   -->
         <label> First Name*:</label>
         <input type='text' name='fname' maxlength=20 placeholder="First Name" id="bibek" required>
                 <!-- 'value=name ' here name will be shown in the input box which has to be
                 deleted in order to enter the value. however, placeholder does the work. -->
 
         <hr>
+<!-- almost every input type should have name attribute as input data 
+will be equal to name once the form is submitted and goes to server -->
 
+<!-- id and for value should be same..../// id is for javascript and label is used for convenient so that 
+when a user clicks in word ...it directs to input field. -->
+
+<!-- value attribute is used just for default value ... -->
         <label for='lastname'>Last Name*:</label> &nbsp;&nbsp;
         <input type="text" id="lastname" name="lname" placeholder="Last Name" required>
+
+<hr>
+
+<label for='email'>Email: </label>
+<input type='email' id="email" name='Email'  pattern="[a-z]+@-">
+
+<hr>
+
+<label for='pw'>Password: </label>
+<input type='password' id="pw" name='passcode'  >
+
+<hr>
+
+<label for='num'> Credit card numbers: </label>
+<input type='number' id="num" name='card numbers' pattern='[0-9]{13-16}' >
+
+<!-- pattern is used for the specification...users can not put the data randomly 
+...[] denotes items can be used and {} denotes the range of number -->
+
+<hr>
+
+<label for='color'>Favourite Color: </label>
+<input type='color' id="color" name='colors' >
 
 <hr>
 
@@ -45,7 +75,8 @@
 
         <label for='monitors'>How many monitors do you wanna have?</label> <br>
         <span>1</span>
-        <input type='range' id='monitors' name=monitor min=1 max="10" >
+        <input type='range' id='monitors' name=monitor min=0 max="10" step="2"> 
+        <!-- step is used to maintain the interval -->
         <span>10</span>
 
         <hr> 
